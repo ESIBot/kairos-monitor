@@ -3,6 +3,8 @@ version: '2'
 services:
   kairos-kinton:
     build: kairos-kinton
+    environment:
+      - KINTON_HUB_UUID=<YOUR KINTON_HUB_UUID>
 
   grafana:
     build: kairos-grafana
@@ -16,8 +18,6 @@ services:
       - DS_DB=kairos
       - GF_USER=esibot
       - GF_PASS=esibot
-    # volumes:
-    #   - /var/lib/grafana:/var/lib/grafana
 
   influxdb:
     image: influxdb:0.13
