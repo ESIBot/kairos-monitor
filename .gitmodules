@@ -1,0 +1,3 @@
+[submodule "kairos-kinton"]
+	path = kairos-kinton
+	url = https://github.com/ESIBot/kairos-kinton.git
